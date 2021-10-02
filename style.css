@@ -2,7 +2,7 @@ body{
     background: red;
 }
 
-row{
+.row{
     background-image: url("https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_1280.jpg");
     color: teal;
 }
