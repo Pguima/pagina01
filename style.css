@@ -7,21 +7,24 @@
     font-family: "Poppins", sans-serif;
   }
 
+.row{
+    width: 1400px;
+    text-align: center;
+}
+
 .container{
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.row{
-    background-color: aqua;
-    width: 1400px;
+    flex-wrap: wrap;
 }
 
   .row::after {
     content: "";
     clear: both;
-    display: table;
+    display: block;
   }
   
   [class*="col-"] {
@@ -46,19 +49,60 @@
 
 /*Seção 01*/
 .cont-01{
-    background-image: url("https://github.com/Pguima/pagina01/blob/main/image/capa-home2.png?raw=true");
+    background-image: url(/image/capa-home2.png);
     background-position: center;
     background-size: cover;
     height: 90vh;
 }
 
 .cont-01 .title{
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 900;
-    line-height: 60px;
+    line-height: 80px;
+    background-color: aqua;
 }
 
 .cont-01 .subtitle{
-    font-size: 50px;
+    font-size: 35px;
     line-height: 60px;
+}
+
+.cont-01 .text{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 20px 20% 0;
+}
+
+.cont-01 .bt-left{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cont-01 .bt-right{
+    display: flex;
+    justify-content: flex-start;
+}
+
+button.portfolio{
+    background-color: aqua;
+    border: none;
+    padding: 15px 80px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+button.contato{
+    background-color: transparent;
+    border: 2px solid aqua;
+    padding: 15px 80px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.row-02{
+    position: absolute;
+    bottom: -20%;
 }
