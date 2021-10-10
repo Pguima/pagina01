@@ -1,9 +1,24 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.row::after {
+.row{
+    background-color: aqua;
+    width: 1400px;
+}
+
+  .row::after {
     content: "";
     clear: both;
     display: table;
@@ -27,14 +42,23 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
+/*--------------------------------------------------------*/
 
-/*-----------------------------------------------------------------------------------*/
-
-.row{
+/*Seção 01*/
+.cont-01{
+    background-image: url(/image/capa-home2.png);
+    background-position: center;
     background-size: cover;
-    background-image: url("https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_1280.jpg");
-    color: teal;
-    height: 100vh;
+    height: 90vh;
 }
 
+.cont-01 .title{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+}
 
+.cont-01 .subtitle{
+    font-size: 50px;
+    line-height: 60px;
+}
