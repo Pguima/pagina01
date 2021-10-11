@@ -21,6 +21,12 @@
     flex-wrap: wrap;
 }
 
+p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
   .row::after {
     content: "";
     clear: both;
@@ -46,10 +52,60 @@
   .col-12 {width: 100%;}
 
 /*--------------------------------------------------------*/
+/*Header*/
+header{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    z-index: 6;
+    transition: .6s;
+}
+
+header.sticky{ 
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.116);
+}
+
+header .col-12{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: 900;
+    transition: .6s;
+}
+
+header.sticky h1{
+    font-size: 35px;
+}
+
+header span{
+    color: rgb(0, 224, 224);
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header li{
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
 
 /*Seção 01*/
 .cont-01{
-    background-image: url("https://github.com/Pguima/pagina01/blob/main/image/capa-home2.png?raw=true");
+    background-image: url(/image/capa-home2.png);
     background-position: center;
     background-size: cover;
     height: 90vh;
@@ -67,10 +123,7 @@
     line-height: 60px;
 }
 
-.cont-01 .text{
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
+.cont-01 p{
     padding: 20px 20% 0;
 }
 
@@ -102,7 +155,42 @@ button.contato{
     text-decoration: none;
 }
 
-.row-02{
+.cont-01 .col-main .fab{
+    font-size: 4em;
+    margin: 10px;
+}
+
+
+/*Seção 02*/
+.cont-02{
+    height: 70vh;
+}
+.cont-02 .col-6{
+    position: relative;
+    text-align: left;
+}
+
+.cont-02 .col-6 h2{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.cont-02 p{
+    margin-bottom: 20px;
+}
+
+.cont-02 img{
+    height: 500px;
     position: absolute;
-    bottom: -20%;
+    top: -50px;
+    transform: scale(1.2);
+}
+
+.cont-02 .content{
+    background-color: rgb(255, 255, 255);
+    padding: 50px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.116);
+    z-index: 5;
 }
