@@ -1,0 +1,48 @@
+.cont-03 .col-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    background-color: #262626;
+}
+
+.cont-03 .col-left .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    margin: 0 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff9cee 25%, #444 25%, #444 50%,#ff9cee  50%, #ff9cee  75%, #444 75%);
+    background-size: 40px 40px;
+    filter: grayscale(1);
+    animation: animateBg 1s linear infinite;
+    animation-play-state: paused;
+    transition: filter 1s;
+    display: flex;
+    justify-content: center;
+}
+
+.cont-03 .col-left .box:hover{
+    animation-play-state: running;
+    filter: grayscale(0);
+}
+
+@keyframes animateBg {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 40px;
+    }
+}
+
+.cont-03 .col-left .box img{
+    position: absolute;
+    height: 90%;
+    bottom: 0;
+    transition: height .5s;
+}
+
+.cont-03 .col-left .box:hover img{
+    height: 420px;
+}
